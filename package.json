@@ -1,0 +1,25 @@
+{
+  "name": "basic-plus-syntax-formatting",
+  "displayName": "Basic Plus Syntax Formatting",
+  "description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bp",
+      "aliases": ["basicplus", "bp"],
+      "extensions": [".bp",".bpi",".bpm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bp",
+      "scopeName": "source.bp",
+      "path": "./syntaxes/bp.tmLanguage.json"
+    }]
+  }
+}
