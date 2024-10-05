@@ -3,23 +3,33 @@
   "displayName": "Basic Plus Syntax Formatting",
   "description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
   "version": "0.0.1",
+  "publisher": "bybro06",
   "engines": {
     "vscode": "^1.94.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bybro06/basic-plus-syntax-formatting.git"
+  },
   "contributes": {
     "languages": [{
       "id": "bp",
-      "aliases": ["basicplus", "bp"],
-      "extensions": [".bp",".bpi",".bpm"],
+      "aliases": ["Basic Plus","basicplus", "bp"],
+      "extensions": [".bp", ".bpi", ".bpm"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "bp",
       "scopeName": "source.bp",
       "path": "./syntaxes/bp.tmLanguage.json"
+    }],
+    "themes": [{
+      "label": "Basic Plus Theme",
+      "uiTheme": "vs-dark",
+      "path": "./basic-plus-theme.json"
     }]
   }
 }

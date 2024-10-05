@@ -1,65 +1,28 @@
-# basic-plus-syntax-formatting README
+Basic Plus Syntax Formatting
+Basic Plus Syntax Formatting is a Visual Studio Code extension that provides syntax highlighting and formatting for the Basic Plus language (.bp,.bpi,.bpm files). This extension enhances the readability of your Basic Plus code by applying colors and formats to keywords, strings, and other language constructs.
 
-This is the README for your extension "basic-plus-syntax-formatting". After writing up a brief description, we recommend including the following sections.
+Features
+Syntax Highlighting: Supports custom coloring for keywords, strings, and control structures in Basic Plus code files.
+Customizable Color Scheme: The extension provides a default color scheme, where keywords like If, While, For, and Function are highlighted in a light blue for better visibility.
+String Formatting: Double-quoted strings are highlighted, along with escape sequences.
+Example of keyword highlighting:
 
-## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+𝐾𝑒𝑦𝑤𝑜𝑟𝑑𝐻𝑖𝑔ℎ𝑙𝑖𝑔ℎ𝑡𝑖𝑛𝑔
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+Requirements
+This extension does not require any external dependencies. It works out-of-the-box for Basic Plus (.bp,.bpi,.bpm) files.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Extension Settings
+This extension does not add any custom settings to the VS Code configuration at the moment. Future releases may include options for customizing the color scheme or adding more language-specific features.
 
-## Requirements
+Known Issues
+Some complex Basic Plus constructs may not be highlighted properly. We are actively working on improving the grammar file to support more language features.
+If you encounter any issues with the extension, please report them on the GitHub issue tracker.
+Release Notes
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+0.2.0
+Initial Release: Basic syntax highlighting for If, While, For, Function, Sub and their respective End keywords, and string formatting.
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Enjoy coding with Basic Plus Syntax Formatting!

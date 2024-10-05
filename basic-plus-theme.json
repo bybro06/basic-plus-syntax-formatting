@@ -1,0 +1,19 @@
+{
+	"colors": {
+		// Otros colores...
+	},
+	"tokenColors": [
+		{
+			"scope": "keyword.control.bp",  // Asegúrate de que esto coincide con el nombre del alcance de las palabras clave
+			"settings": {
+				"foreground": "#00BEEE"  // Azul celeste en formato hexadecimal
+			}
+            
+            "scope": "string.quoted.double.bp",  // Asegúrate de que esto coincide con el nombre del alcance de las palabras clave
+			"settings": {
+				"foreground": "EEEE00"  // Azul celeste en formato hexadecimal
+			}
+		},
+		// Otros colores...
+	]
+}
