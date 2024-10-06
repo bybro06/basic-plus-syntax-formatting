@@ -4,7 +4,10 @@
 
 ## 2024.10.6 (6 October 2024)
 
-### 1.0.1
+### 1.1.1
+Added logo.
+
+### 1.1.0
 Added syntax tokens for numbers, methods, comments, subroutines and operators.
 
 
