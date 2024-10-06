@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/bybro06/basic-plus-syntax-formatting.git"
   },
-  "icon": "images/basic-plus-logo.png",
+  "icon": "images/basic-plus-logo.jpeg",
   "contributes": {
     "languages": [{
       "id": "bp",
