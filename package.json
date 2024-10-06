@@ -2,7 +2,7 @@
   "name": "basic-plus-syntax-formatting",
   "displayName": "Basic Plus Syntax Formatting",
   "description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "bybro06",
   "engines": {
     "vscode": "^1.94.0"

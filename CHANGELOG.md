@@ -1,9 +1,14 @@
-# Change Log
+# Changelog
 
-All notable changes to the "basic-plus-syntax-formatting" extension will be documented in this file.
+**Please see https://github.com/bybro06/basic-plus-syntax-formatting.git for the latest release notes. The notes below have been kept for historical purposes.**
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 2024.10.6 (6 October 2024)
 
-## [Unreleased]
+### 1.0.1
+Added syntax tokens for numbers, methods, comments, subroutines and operators.
 
-- Initial release
+
+## 2024.10.5 (5 October 2024)
+
+### 1.0.0 Initial Release
+

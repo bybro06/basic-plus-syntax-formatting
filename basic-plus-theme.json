@@ -18,13 +18,13 @@
         {
           "scope": "comment.line.bp", 
           "settings": {
-            "foreground": "#98FF98" 
+            "foreground": "#44AA44" 
           }
         },
         {
             "scope": "entity.name.function.bp.method.before",
             "settings": {
-              "foreground": "#44AA44"  
+              "foreground": "#98FF98"  
             }
           },
           {
@@ -40,6 +40,18 @@
             }
           },
           {
+            "scope": "keyword.function.bp",
+            "settings": {
+              "foreground": "#AABBFF" 
+            }
+          },
+          {
+            "scope": "entity.name.subroutine.bp",
+            "settings": {
+              "foreground": "#B07BF0" 
+            }
+          },
+          {
             "scope": "constant.numeric.bp",
             "settings": {
               "foreground": "#FFAA33" 
@@ -48,7 +60,7 @@
           {
             "scope": "arithmetic.operator.bp",
             "settings": {
-              "foreground": "#FFBBCC" 
+              "foreground": "#AABBFF" 
             }
           }
     ]

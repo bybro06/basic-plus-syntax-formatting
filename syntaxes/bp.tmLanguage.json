@@ -9,19 +9,22 @@
 		"include": "#numbers"
 	  },
 	  {
-		"include": "#operators"
-	  },
-	  {
 		"include": "#methods"
 	  },
 	  {
 		"include": "#functions"
 	  },
 	  {
+		"include": "#subroutines"
+	  },
+	  {
 		"include": "#strings"
 	  },
 	  {
 		"include": "#comments"
+	  },
+	  {
+		"include": "#operators"
 	  }
 	],
 	"repository": {
@@ -29,38 +32,51 @@
 		"patterns": [
 		  {
 			"name": "keyword.control.bp",
-			"match": "(?i)\\b(if|elseif|else|endif|while|endwhile|for|endfor|function|endfunction|sub|endsub|include|import|folder|to|step|then|goto|private|and|or|in|out|number|string|break|continue)\\b"
+			"match": "(?i)\\b(if|elseif|else|endif|while|endwhile|for|endfor|function|endfunction|sub|endsub|include|import|folder|to|step|then|goto|in|out|and|or|break|continue)\\b"
 		  }
 		]
 	  },
 	  "methods": {
-      "patterns": [
-        {
-          "name": "entity.name.function.bp.method.before", 
-          "match": "\\b\\w+(?=\\.)" 
-        },
-        {
-          "name": "entity.name.function.bp.method.after",  
-          "match": "(?<=\\.)\\w+\\b" 
-        }
-      ]
-    },
+		"patterns": [
+		  {
+			"name": "entity.name.function.bp.method.before", 
+			"match": "\\b\\w+(?=\\.)" 
+		  },
+		  {
+			"name": "entity.name.function.bp.method.after",  
+			"match": "(?<=\\.)\\w+\\b" 
+		  }
+		]
+	  },
 	  "functions": {
 		"patterns": [
 		  {
 			"name": "entity.name.function.bp", 
-			"match": "(?<=\\b(Function|Sub)\\s+)\\w+\\b" 
+			"match": "(?<=\\bFunction\\s+)\\w+\\b" 
 		  },
 		  {
 			"name": "entity.name.function.bp", 
 			"match": "(?<!\\.)\\b\\w+(?=\\s*\\()" 
 		  },
 		  {
-			"name": "entity.name.function.bp",  
-			"match": "\\bThread\\.Run\\s*=\\s*\\b\\w+\\b"
+			"name": "keyword.function.bp", 
+			"match": "(?i)\\b(private|number|string)\\b"
 		  }
 		]
 	  },
+	  "subroutines": {
+      "patterns": [
+        {
+          "name": "entity.name.subroutine.bp",
+          "match": "(?<=\\bSub\\s+)\\w+\\b"
+        },
+        {
+			"name": "entity.name.subroutine.bp",
+			"match": "\\bRun\\s*=\\s*\\b\\w+\\b"
+		  }
+		  
+      ]
+    },
 	  "strings": {
 		"name": "string.quoted.double.bp",
 		"begin": "\"",
@@ -77,6 +93,10 @@
 		  {
 			"name": "comment.line.bp",  
 			"match": "'[^\n]*"  
+		  },
+		  {
+			"name": "comment.line.bp",  
+			"match": "#[^\n]*"  
 		  }
 		]
 	  },
@@ -91,8 +111,8 @@
 	  "operators": {
 		"patterns": [
 		  {
-			"name": "aritmetic.operator.bp", 
-			"match": "\\b(+|-|*|/)\\b" 
+			"name": "arithmetic.operator.bp",
+			"match": "[+\\-*/=]" 
 		  }
 		]
 	  }
