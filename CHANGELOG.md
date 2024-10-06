@@ -4,6 +4,9 @@
 
 ## 2024.10.6 (6 October 2024)
 
+### 1.2.0
+Added .bp, .bpi, .bpm icons.
+
 ### 1.1.1
 Added logo.
 

@@ -1,0 +1,23 @@
+{
+    "$schema": "vscode://schemas/icon-theme",
+    "iconDefinitions": {
+      "bpFileIcon": {
+        "iconPath": "images/bp.png"
+      },
+      "bpiFileIcon": {
+        "iconPath": "images/bpi.png"
+      },
+      "bpmFileIcon": {
+        "iconPath": "images/bpm.png"
+      }
+    },
+    "fileExtensions": {
+      "bp": "bpFileIcon",
+      "bpi": "bpiFileIcon",
+      "bpm": "bpmFileIcon"
+    },
+    "languageIds": {
+      "bp": "bpFileIcon"
+    }
+  }
+  
