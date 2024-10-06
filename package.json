@@ -2,7 +2,7 @@
   "name": "basic-plus-syntax-formatting",
   "displayName": "Basic Plus Syntax Formatting",
   "description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "bybro06",
   "engines": {
     "vscode": "^1.94.0"
@@ -30,6 +30,12 @@
       "label": "Basic Plus Theme",
       "uiTheme": "vs-dark",
       "path": "./basic-plus-theme.json"
-    }]
+    }],
+    "snippets": [
+      {
+        "language": "bp",
+        "path": "./snippets/bp-snippets.json"
+      }
+    ]
   }
 }

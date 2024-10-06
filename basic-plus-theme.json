@@ -1,19 +1,55 @@
 {
-	"colors": {
-		// Otros colores...
-	},
-	"tokenColors": [
-		{
-			"scope": "keyword.control.bp",  // Asegúrate de que esto coincide con el nombre del alcance de las palabras clave
-			"settings": {
-				"foreground": "#00BEEE"  // Azul celeste en formato hexadecimal
-			}
-            
-            "scope": "string.quoted.double.bp",  // Asegúrate de que esto coincide con el nombre del alcance de las palabras clave
-			"settings": {
-				"foreground": "EEEE00"  // Azul celeste en formato hexadecimal
-			}
-		},
-		// Otros colores...
-	]
+    "colors": {
+        
+    },
+    "tokenColors": [
+        {
+            "scope": "keyword.control.bp",
+            "settings": {
+                "foreground": "#00BEEE"
+            }
+        },
+        {
+            "scope": "string.quoted.double.bp", 
+            "settings": {
+                "foreground": "#FFAA33"
+            }
+        },
+        {
+          "scope": "comment.line.bp", 
+          "settings": {
+            "foreground": "#98FF98" 
+          }
+        },
+        {
+            "scope": "entity.name.function.bp.method.before",
+            "settings": {
+              "foreground": "#44AA44"  
+            }
+          },
+          {
+            "scope": "entity.name.function.bp.method.after",
+            "settings": {
+              "foreground": "#FF667C" 
+            }
+          },
+          {
+            "scope": "entity.name.function.bp",
+            "settings": {
+              "foreground": "#B07BF0" 
+            }
+          },
+          {
+            "scope": "constant.numeric.bp",
+            "settings": {
+              "foreground": "#FFAA33" 
+            }
+          },
+          {
+            "scope": "arithmetic.operator.bp",
+            "settings": {
+              "foreground": "#FFBBCC" 
+            }
+          }
+    ]
 }
