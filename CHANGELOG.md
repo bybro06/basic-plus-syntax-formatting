@@ -2,6 +2,12 @@
 
 **Please see https://github.com/bybro06/basic-plus-syntax-formatting.git for the latest release notes. The notes below have been kept for historical purposes.**
 
+## 2024.10.9 (9 October 2024)
+
+###1.3.0
+Increased text contrast
+Changed white value to #EEEEEE
+
 ## 2024.10.6 (6 October 2024)
 
 ### 1.2.0
