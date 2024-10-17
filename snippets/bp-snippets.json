@@ -1,0 +1,77 @@
+{
+  "For Loop": {
+    "prefix": "For",
+    "body": [
+      "For ${1:variable} To ${2:condition}",
+      "\t$0",
+      "EndFor"
+    ],
+    "description": "Snippet para un ciclo For con EndFor"
+  },
+  "For-Step Loop": {
+    "prefix": "For Step",
+    "body": [
+      "For ${1:variable} To ${2:condition} Step ${3:increment}",
+      "\t$0",
+      "EndFor"
+    ],
+    "description": "Snippet para un ciclo For con EndFor"
+  },
+  "While Loop": {
+    "prefix": "While",
+    "body": [
+      "While ${1:condition}",
+      "\t$0",
+      "EndWhile"
+    ],
+    "description": "Snippet para un ciclo While con EndWhile"
+  },
+  "Function Declaration": {
+    "prefix": "Function",
+    "body": [
+      "Function ${1:functionName}(${2:in/out} ${3:type} ${4:params})",
+      "\t$0",
+      "EndFunction"
+    ],
+    "description": "Snippet para la declaración de una función con EndFunction"
+  },
+  "If Statement": {
+    "prefix": "If",
+    "body": [
+      "If ${1:condition} Then",
+      "\t$0",
+      "EndIf"
+    ],
+    "description": "Snippet para una estructura condicional If con EndIf"
+  },
+  "Subroutine Declaration": {
+    "prefix": "Sub",
+    "body": [
+      "Sub ${1:subroutineName}",
+      "\t$0",
+      "EndSub"
+    ],
+    "description": "Snippet para la declaración de una subrutina con EndSub"
+  },
+  "Module Import": {
+    "prefix": "import",
+    "body": [
+      "import \"${1:modulePath}\""
+    ],
+    "description": "Snippet para la importación de modules (.bpm)"
+  },
+  "Include Inclusions": {
+    "prefix": "include",
+    "body": [
+      "include \"${1:includePath}\""
+    ],
+    "description": "Snippet para la inclusión de includes (.bpi)"
+  },
+  "Folder Insertion": {
+    "prefix": "folder",
+    "body": [
+      "folder \"${1:folderPath}\""
+    ],
+    "description": "Snippet para la inclusión del programa en una carpeta"
+  }
+}

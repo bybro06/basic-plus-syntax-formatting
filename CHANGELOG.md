@@ -4,6 +4,19 @@
 
 ## 2024.10.9 (9 October 2024)
 
+###1.4.0
+Added snippets
+
+- While
+- For
+- For-Step
+- If
+- Function
+- Sub
+- import
+- include
+- folder
+
 ###1.3.0
 Increased text contrast
 Changed white value to #EEEEEE

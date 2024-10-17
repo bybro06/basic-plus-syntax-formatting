@@ -1,48 +1,47 @@
 {
-    "For Loop": {
-      "prefix": "for",
-      "body": [
-        "For ${1:variable} To ${2:condition}",
-        "\t$0",
-        "EndFor"
-      ],
-      "description": "Snippet para un ciclo For con EndFor"
-    },
-    "While Loop": {
-      "prefix": "while",
-      "body": [
-        "While ${1:condition}",
-        "\t$0",
-        "EndWhile"
-      ],
-      "description": "Snippet para un ciclo While con EndWhile"
-    },
-    "Function Declaration": {
-      "prefix": "function",
-      "body": [
-        "Function ${1:functionName}(${2:params})",
-        "\t$0",
-        "EndFunction"
-      ],
-      "description": "Snippet para la declaración de una función con EndFunction"
-    },
-    "If Statement": {
-      "prefix": "if",
-      "body": [
-        "If ${1:condition} Then",
-        "\t$0",
-        "EndIf"
-      ],
-      "description": "Snippet para una estructura condicional If con EndIf"
-    },
-    "Subroutine Declaration": {
-      "prefix": "sub",
-      "body": [
-        "Sub ${1:subroutineName}",
-        "\t$0",
-        "EndSub"
-      ],
-      "description": "Snippet para la declaración de una subrutina con EndSub"
-    }
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "For ${1:variable} To ${2:condition}",
+      "\t$0",
+      "EndFor"
+    ],
+    "description": "Snippet para un ciclo For con EndFor"
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": [
+      "While ${1:condition}",
+      "\t$0",
+      "EndWhile"
+    ],
+    "description": "Snippet para un ciclo While con EndWhile"
+  },
+  "Function Declaration": {
+    "prefix": "function",
+    "body": [
+      "Function ${1:functionName}(${2:params})",
+      "\t$0",
+      "EndFunction"
+    ],
+    "description": "Snippet para la declaración de una función con EndFunction"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "If ${1:condition} Then",
+      "\t$0",
+      "EndIf"
+    ],
+    "description": "Snippet para una estructura condicional If con EndIf"
+  },
+  "Subroutine Declaration": {
+    "prefix": "sub",
+    "body": [
+      "Sub ${1:subroutineName}",
+      "\t$0",
+      "EndSub"
+    ],
+    "description": "Snippet para la declaración de una subrutina con EndSub"
   }
-  
+}

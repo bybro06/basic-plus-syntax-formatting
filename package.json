@@ -1,49 +1,76 @@
 {
-  "name": "basic-plus-syntax-formatting",
-  "displayName": "Basic Plus Syntax Formatting",
-  "description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
-  "version": "1.3.0",
-  "publisher": "bybro06",
-  "engines": {
-    "vscode": "^1.94.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bybro06/basic-plus-syntax-formatting.git"
-  },
-  "icon": "images/basic-plus-logo.jpeg",
-  "contributes": {
-    "languages": [{
-      "id": "bp",
-      "aliases": ["Basic Plus","basicplus", "bp"],
-      "extensions": [".bp", ".bpi", ".bpm"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "bp",
-      "scopeName": "source.bp",
-      "path": "./syntaxes/bp.tmLanguage.json"
-    }],
-    "themes": [{
-      "label": "Basic Plus Theme",
-      "uiTheme": "vs-dark",
-      "path": "./basic-plus-theme.json"
-    }],
-    "snippets": [
-      {
-        "language": "bp",
-        "path": "./snippets/bp-snippets.json"
-      }
-    ],
-    "iconThemes": [
-      {
-        "id": "basic-plus-program-icon-theme",
-        "label": "Basic Plus Program Icon Theme",
-        "path": "./icon-theme.json"
-      }
-    ]
-  }
+	"name": "basic-plus-syntax-formatting",
+	"displayName": "Basic Plus Syntax Formatting",
+	"description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
+	"version": "1.4.0",
+	"publisher": "bybro06",
+	"engines": {
+		"vscode": "^1.94.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bybro06/basic-plus-syntax-formatting.git"
+	},
+	"icon": "images/basic-plus-logo.jpeg",
+	"contributes": {
+		"languages": [
+			{
+				"id": "bp",
+				"aliases": [
+					"Basic Plus",
+					"basicplus",
+					"bp"
+				],
+				"extensions": [
+					".bp",
+					".bpi",
+					".bpm"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "bp",
+				"scopeName": "source.bp",
+				"path": "./syntaxes/bp.tmLanguage.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Basic Plus Theme",
+				"uiTheme": "vs-dark",
+				"path": "./basic-plus-theme.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "bp",
+				"path": "./snippets/bp-snippets.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "basic-plus-program-icon-theme",
+				"label": "Basic Plus Program Icon Theme",
+				"path": "./icon-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "411086bb-a00c-4746-b9a0-fbc90e9a8907",
+		"publisherId": "b4ae8f98-69da-420f-a757-d2073d17cb61",
+		"publisherDisplayName": "José Esteban Benavides Rodríguez",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1728472104117,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
 }
