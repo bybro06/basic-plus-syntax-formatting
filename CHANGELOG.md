@@ -4,7 +4,7 @@
 
 ## 2024.10.9 (9 October 2024)
 
-###1.4.0
+### 1.4.0
 Added snippets
 
 - While
@@ -17,7 +17,7 @@ Added snippets
 - include
 - folder
 
-###1.3.0
+### 1.3.0
 Increased text contrast
 Changed white value to #EEEEEE
 
