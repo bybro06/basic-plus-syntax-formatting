@@ -2,22 +2,27 @@
     "$schema": "vscode://schemas/icon-theme",
     "iconDefinitions": {
       "bpFileIcon": {
-        "iconPath": "images/bp.png"
+        "iconPath": "../images/bp.png"
       },
       "bpiFileIcon": {
-        "iconPath": "images/bpi.png"
+        "iconPath": "../images/bpi.png"
       },
       "bpmFileIcon": {
-        "iconPath": "images/bpm.png"
+        "iconPath": "../images/bpm.png"
+      },
+      "xmlFileIcon": {
+        "iconPath": "../images/xml.png"
       }
     },
     "fileExtensions": {
       "bp": "bpFileIcon",
       "bpi": "bpiFileIcon",
-      "bpm": "bpmFileIcon"
+      "bpm": "bpmFileIcon",
+      "xml": "xmlFileIcon"
     },
     "languageIds": {
-      "bp": "bpFileIcon"
+      "bp": "bpFileIcon",
+      "xml": "xmlFileIcon"
     }
   }
   

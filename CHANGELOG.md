@@ -11,6 +11,9 @@ Solved 'Thread.Run = Subroutine' issue
 
 Added .xml syntax formatting
 
+#### 1.5.2
+Solved directory issues
+
 ## 2024.10.9 (9 October 2024)
 
 ### 1.4.0

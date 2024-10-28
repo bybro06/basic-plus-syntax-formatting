@@ -2,7 +2,7 @@
 	"name": "basic-plus-syntax-formatting",
 	"displayName": "Basic Plus Syntax Formatting",
 	"description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
-	"version": "1.5.0",
+	"version": "1.5.2",
 	"publisher": "bybro06",
 	"engines": {
 		"vscode": "^1.94.0"
@@ -51,7 +51,13 @@
 				"language": "bp",
 				"scopeName": "source.bp",
 				"path": "./syntaxes/bp.tmLanguage.json"
+			},
+			{
+				"language": "xml",
+				"scopeName": "source.xml",
+				"path": "./syntaxes/bp.tmLanguage.json"
 			}
+
 		],
 		"themes": [
 			{
@@ -75,7 +81,7 @@
 			{
 				"id": "basic-plus-program-icon-theme",
 				"label": "Basic Plus Program Icon Theme",
-				"path": ".themes/icon-theme.json"
+				"path": "./themes/icon-theme.json"
 			}
 		]
 	},
