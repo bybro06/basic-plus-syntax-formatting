@@ -70,9 +70,9 @@
           "name": "entity.name.subroutine.bp",
           "match": "(?<=\\bSub\\s+)\\w+\\b"
         },
-        {
+		  {
 			"name": "entity.name.subroutine.bp",
-			"match": "\\bRun\\s*=\\s*\\b\\w+\\b"
+			"match": "(?<=\\bThread\\.Run\\s*=\\s*)\\w+\\b" 
 		  }
 		  
       ]
