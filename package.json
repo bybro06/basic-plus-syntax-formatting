@@ -29,7 +29,18 @@
 					".bpi",
 					".bpm"
 				],
-				"configuration": ".syntaxes/language-configuration.json"
+				"configuration": "./syntaxes/language-configuration.json"
+			},
+			{
+				"id": "xml",
+				"aliases": [
+					"xml",
+					"Extensible Markup Language"
+				],
+				"extensions": [
+					".xml"
+				],
+				"configuration": "./syntaxes/language-configuration.json"
 			}
 		],
 		"grammars": [

@@ -85,6 +85,48 @@
       "settings": {
         "foreground": "#EEEEEE"
       }
+    },
+    {
+      "scope": "entity.name.tag.xml",
+      "settings": {
+        "foreground": "#00CED1" 
+      }
+    },
+    {
+      "scope": "entity.other.attribute-name.xml",
+      "settings": {
+        "foreground": "#00BFFF" 
+      }
+    },
+    {
+      "scope": "string.quoted.double.xml",
+      "settings": {
+        "foreground": "#FF6347"
+      }
+    },
+    {
+      "scope": "punctuation.definition.tag.begin.xml",
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    {
+      "scope": "punctuation.definition.tag.end.xml",
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    {
+      "scope": "meta.tag.xml",
+      "settings": {
+        "foreground": "#5FAED0"
+      }
+    },
+    {
+      "scope": "meta.attribute.value.xml",
+      "settings": {
+        "foreground": "#20B2AA"
+      }
     }
   ]
 }

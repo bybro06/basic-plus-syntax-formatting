@@ -2,121 +2,196 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "basicplus",
 	"patterns": [
-	  {
-		"include": "#keywords"
-	  },
-	  {
-		"include": "#numbers"
-	  },
-	  {
-		"include": "#methods"
-	  },
-	  {
-		"include": "#functions"
-	  },
-	  {
-		"include": "#subroutines"
-	  },
-	  {
-		"include": "#strings"
-	  },
-	  {
-		"include": "#comments"
-	  },
-	  {
-		"include": "#operators"
-	  }
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#methods"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#subroutines"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#xml"
+		}
 	],
 	"repository": {
-	  "keywords": {
-		"patterns": [
-		  {
-			"name": "keyword.control.bp",
-			"match": "(?i)\\b(if|elseif|else|endif|while|endwhile|for|endfor|function|endfunction|sub|endsub|include|import|folder|to|step|then|goto|in|out|and|or|break|continue)\\b"
-		  }
-		]
-	  },
-	  "methods": {
-		"patterns": [
-		  {
-			"name": "entity.name.function.bp.method.before", 
-			"match": "\\b\\w+(?=\\.)" 
-		  },
-		  {
-			"name": "entity.name.function.bp.method.after",  
-			"match": "(?<=\\.)\\w+\\b" 
-		  }
-		]
-	  },
-	  "functions": {
-		"patterns": [
-		  {
-			"name": "entity.name.function.bp", 
-			"match": "(?<=\\bFunction\\s+)\\w+\\b" 
-		  },
-		  {
-			"name": "entity.name.function.bp", 
-			"match": "(?<!\\.)\\b\\w+(?=\\s*\\()" 
-		  },
-		  {
-			"name": "keyword.function.bp", 
-			"match": "(?i)\\b(private|number|string)\\b"
-		  }
-		]
-	  },
-	  "subroutines": {
-      "patterns": [
-        {
-          "name": "entity.name.subroutine.bp",
-          "match": "(?<=\\bSub\\s+)\\w+\\b"
-        },
-		  {
-			"name": "entity.name.subroutine.bp",
-			"match": "(?<=\\bThread\\.Run\\s*=\\s*)\\w+\\b" 
-		  }
-		  
-      ]
-    },
-	  "strings": {
-		"name": "string.quoted.double.bp",
-		"begin": "\"",
-		"end": "\"",
-		"patterns": [
-		  {
-			"name": "constant.character.escape.bp",
-			"match": "\\\\."
-		  }
-		]
-	  },
-	  "comments": {
-		"patterns": [
-		  {
-			"name": "comment.line.bp",  
-			"match": "'[^\n]*"  
-		  },
-		  {
-			"name": "comment.line.bp",  
-			"match": "#[^\n]*"  
-		  }
-		]
-	  },
-	  "numbers": {
-		"patterns": [
-		  {
-			"name": "constant.numeric.bp", 
-			"match": "\\b\\d+(\\.\\d+)?\\b" 
-		  }
-		]
-	  },
-	  "operators": {
-		"patterns": [
-		  {
-			"name": "arithmetic.operator.bp",
-			"match": "[+\\-*/=]" 
-		  }
-		]
-	  }
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.bp",
+					"match": "(?i)\\b(if|elseif|else|endif|while|endwhile|for|endfor|function|endfunction|sub|endsub|include|import|folder|to|step|then|goto|in|out|and|or|break|continue)\\b"
+				}
+			]
+		},
+		"methods": {
+			"patterns": [
+				{
+					"name": "entity.name.function.bp.method.before",
+					"match": "\\b\\w+(?=\\.)"
+				},
+				{
+					"name": "entity.name.function.bp.method.after",
+					"match": "(?<=\\.)\\w+\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.bp",
+					"match": "(?<=\\bFunction\\s+)\\w+\\b"
+				},
+				{
+					"name": "entity.name.function.bp",
+					"match": "(?<!\\.)\\b\\w+(?=\\s*\\()"
+				},
+				{
+					"name": "keyword.function.bp",
+					"match": "(?i)\\b(private|number|string)\\b"
+				}
+			]
+		},
+		"subroutines": {
+			"patterns": [
+				{
+					"name": "entity.name.subroutine.bp",
+					"match": "(?<=\\bSub\\s+)\\w+\\b"
+				},
+				{
+					"name": "entity.name.subroutine.bp",
+					"match": "(?<=\\bThread\\.Run\\s*=\\s*)\\w+\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.bp",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.bp",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.bp",
+					"match": "'[^\n]*"
+				},
+				{
+					"name": "comment.line.bp",
+					"match": "#[^\n]*"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.bp",
+					"match": "\\b\\d+(\\.\\d+)?\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "arithmetic.operator.bp",
+					"match": "[+\\-*/=]"
+				}
+			]
+		},
+		"xml": {
+			"patterns": [
+				{
+					"name": "entity.name.tag.xml",
+					"begin": "(</?)([a-zA-Z_][\\w\\-]*)",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.definition.tag.begin.xml"
+						},
+						"2": {
+							"name": "entity.name.tag.xml"
+						}
+					},
+					"end": "(\\s*/?>)",
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.definition.tag.end.xml"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#xmlAttributes"
+						}
+					]
+				},
+				{
+					"name": "meta.tag.xml",
+					"match": "<\\?.*?\\?>",
+					"patterns": [
+						{
+							"include": "#metaAttributes"
+						}
+					]
+				},
+				{
+					"name": "meta.tag.xml",
+					"match": "<!DOCTYPE.*?>"
+				}
+			]
+		},
+		"xmlAttributes": {
+			"patterns": [
+				{
+					"name": "entity.other.attribute-name.xml",
+					"match": "\\b([a-zA-Z_][\\w\\-]*)(?=\\s*=)"
+				},
+				{
+					"name": "string.quoted.double.xml",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.xml",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.single.xml",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.xml",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "meta.attribute.value.xml",
+					"match": "(?<=\\b[a-zA-Z_][\\w\\-]*\\s*=\\s*)\".*?\"|(?<=\\b[a-zA-Z_][\\w\\-]*\\s*=\\s*)'.*?'"
+				}
+			]
+		}
 	},
 	"scopeName": "source.bp"
-  }
-  
+}
