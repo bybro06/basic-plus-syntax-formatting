@@ -2,7 +2,7 @@
 	"name": "basic-plus-syntax-formatting",
 	"displayName": "Basic Plus Syntax Formatting",
 	"description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"publisher": "bybro06",
 	"engines": {
 		"vscode": "^1.94.0"
@@ -29,7 +29,7 @@
 					".bpi",
 					".bpm"
 				],
-				"configuration": "./language-configuration.json"
+				"configuration": ".syntaxes/language-configuration.json"
 			}
 		],
 		"grammars": [
@@ -41,9 +41,14 @@
 		],
 		"themes": [
 			{
-				"label": "Basic Plus Theme",
+				"label": "Basic Plus Theme Dark",
 				"uiTheme": "vs-dark",
-				"path": "./basic-plus-theme.json"
+				"path": "./themes/basic-plus-theme.json"
+			},
+			{
+				"label": "Basic Plus Theme Light",
+				"uiTheme": "vs",
+				"path": "./themes/basic-plus-theme-light.json"
 			}
 		],
 		"snippets": [
@@ -56,7 +61,7 @@
 			{
 				"id": "basic-plus-program-icon-theme",
 				"label": "Basic Plus Program Icon Theme",
-				"path": "./icon-theme.json"
+				"path": ".themes/icon-theme.json"
 			}
 		]
 	},
@@ -72,5 +77,8 @@
 		"pinned": false,
 		"preRelease": false,
 		"source": "gallery"
+	},
+	"dependencies": {
+		"vsce": "^2.15.0"
 	}
 }

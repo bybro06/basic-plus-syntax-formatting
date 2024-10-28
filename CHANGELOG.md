@@ -2,6 +2,13 @@
 
 **Please see https://github.com/bybro06/basic-plus-syntax-formatting.git for the latest release notes. The notes below have been kept for historical purposes.**
 
+## 2024.10.28 (28 October 2024)
+
+### 1.5.0
+Created Light Theme, which resembles Clev3r IDE
+
+Solved 'Thread.Run = Subroutine' issue
+
 ## 2024.10.9 (9 October 2024)
 
 ### 1.4.0
