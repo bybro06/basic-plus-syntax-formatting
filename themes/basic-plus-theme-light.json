@@ -9,7 +9,8 @@
     {
       "scope": "keyword.control.bp",
       "settings": {
-        "foreground": "#7777FF"
+        "foreground": "#7777FF",
+        "fontStyle": "bold"
       }
     },
     {
@@ -19,7 +20,7 @@
       }
     },
     {
-      "scope": "comment.block.xml",
+      "scope": "comment.line.bp",
       "settings": {
         "foreground": "#3A8020",
         "fontStyle": "italic"
@@ -28,31 +29,36 @@
     {
       "scope": "entity.name.function.bp.method.before",
       "settings": {
-        "foreground": "#006060"
+        "foreground": "#006060",
+        "fontStyle": "bold"
       }
     },
     {
       "scope": "entity.name.function.bp.method.after",
       "settings": {
-        "foreground": "#C24C20"
+        "foreground": "#C24C20",
+        "fontStyle": "bold"
       }
     },
     {
       "scope": "entity.name.function.bp",
       "settings": {
-        "foreground": "#800080"
+        "foreground": "#800080",
+        "fontStyle": "bold"
       }
     },
     {
       "scope": "keyword.function.bp",
       "settings": {
-        "foreground": "#9696FF"
+        "foreground": "#9696FF",
+        "fontStyle": "bold"
       }
     },
     {
       "scope": "entity.name.subroutine.bp",
       "settings": {
-        "foreground": "#800080"
+        "foreground": "#800080",
+        "fontStyle": "bold"
       }
     },
     {
@@ -89,6 +95,13 @@
       "scope": "constant.character.entity.xml",
       "settings": {
         "foreground": "#D16969"
+      }
+    },
+    {
+      "scope": "comment.block.xml",
+      "settings": {
+        "foreground": "#3A8020",
+        "fontStyle": "italic"
       }
     }
   ]

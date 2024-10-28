@@ -15,8 +15,10 @@ Added XML syntax formatting
 Solved directory issues
 
 ### 1.6.0
-
 Added light theme XML syntax formatting
+
+#### 1.6.1
+Fixed Bold text not being bold in light theme
 
 ## 2024.10.9 (9 October 2024)
 
