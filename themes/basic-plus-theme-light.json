@@ -2,7 +2,7 @@
   "name": "Basic Plus Theme Light",
   "type": "light",
   "colors": {
-    "editor.background": "#ffffff",
+    "editor.background": "#EEEEEE",
     "editor.foreground": "#333333"
   },
   "tokenColors": [
