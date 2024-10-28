@@ -9,10 +9,14 @@ Created Light Theme, which resembles Clev3r IDE
 
 Solved 'Thread.Run = Subroutine' issue
 
-Added .xml syntax formatting
+Added XML syntax formatting
 
 #### 1.5.2
 Solved directory issues
+
+### 1.6.0
+
+Added light theme XML syntax formatting
 
 ## 2024.10.9 (9 October 2024)
 

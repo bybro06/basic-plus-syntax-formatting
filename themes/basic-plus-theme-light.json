@@ -9,8 +9,7 @@
     {
       "scope": "keyword.control.bp",
       "settings": {
-        "foreground": "#7777FF",
-        "fontStyle": "bold"
+        "foreground": "#7777FF"
       }
     },
     {
@@ -20,7 +19,7 @@
       }
     },
     {
-      "scope": "comment.line.bp",
+      "scope": "comment.block.xml",
       "settings": {
         "foreground": "#3A8020",
         "fontStyle": "italic"
@@ -29,36 +28,31 @@
     {
       "scope": "entity.name.function.bp.method.before",
       "settings": {
-        "foreground": "#006060",
-        "fontStyle": "bold"
+        "foreground": "#006060"
       }
     },
     {
       "scope": "entity.name.function.bp.method.after",
       "settings": {
-        "foreground": "#C24C20",
-        "fontStyle": "bold"
+        "foreground": "#C24C20"
       }
     },
     {
       "scope": "entity.name.function.bp",
       "settings": {
-        "foreground": "#800080",
-        "fontStyle": "bold"
+        "foreground": "#800080"
       }
     },
     {
       "scope": "keyword.function.bp",
       "settings": {
-        "foreground": "#9696FF",
-        "fontStyle": "bold"
+        "foreground": "#9696FF"
       }
     },
     {
       "scope": "entity.name.subroutine.bp",
       "settings": {
-        "foreground": "#800080",
-        "fontStyle": "bold"
+        "foreground": "#800080"
       }
     },
     {
@@ -74,25 +68,27 @@
       }
     },
     {
-      "scope": [
-        "meta.embedded",
-        "meta.block",
-        "meta.function",
-        "meta.class",
-        "meta.method",
-        "meta.namespace"
-      ],
+      "scope": "entity.name.tag.xml",
       "settings": {
-        "foreground": "#EEEEEE"
+        "foreground": "#007ACC"
       }
     },
     {
-      "scope": [
-        "source",
-        "text"
-      ],
+      "scope": "entity.other.attribute-name.xml",
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A626A4"
+      }
+    },
+    {
+      "scope": "string.quoted.double.xml",
+      "settings": {
+        "foreground": "#E36633"
+      }
+    },
+    {
+      "scope": "constant.character.entity.xml",
+      "settings": {
+        "foreground": "#D16969"
       }
     }
   ]

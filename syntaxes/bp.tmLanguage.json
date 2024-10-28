@@ -25,9 +25,6 @@
 		},
 		{
 			"include": "#operators"
-		},
-		{
-			"include": "#xml"
 		}
 	],
 	"repository": {
@@ -117,81 +114,8 @@
 					"match": "[+\\-*/=]"
 				}
 			]
-		},
-		"xml": {
-			"patterns": [
-				{
-					"name": "entity.name.tag.xml",
-					"begin": "(</?)([a-zA-Z_][\\w\\-]*)",
-					"beginCaptures": {
-						"1": {
-							"name": "punctuation.definition.tag.begin.xml"
-						},
-						"2": {
-							"name": "entity.name.tag.xml"
-						}
-					},
-					"end": "(\\s*/?>)",
-					"endCaptures": {
-						"1": {
-							"name": "punctuation.definition.tag.end.xml"
-						}
-					},
-					"patterns": [
-						{
-							"include": "#xmlAttributes"
-						}
-					]
-				},
-				{
-					"name": "meta.tag.xml",
-					"match": "<\\?.*?\\?>",
-					"patterns": [
-						{
-							"include": "#metaAttributes"
-						}
-					]
-				},
-				{
-					"name": "meta.tag.xml",
-					"match": "<!DOCTYPE.*?>"
-				}
-			]
-		},
-		"xmlAttributes": {
-			"patterns": [
-				{
-					"name": "entity.other.attribute-name.xml",
-					"match": "\\b([a-zA-Z_][\\w\\-]*)(?=\\s*=)"
-				},
-				{
-					"name": "string.quoted.double.xml",
-					"begin": "\"",
-					"end": "\"",
-					"patterns": [
-						{
-							"name": "constant.character.escape.xml",
-							"match": "\\\\."
-						}
-					]
-				},
-				{
-					"name": "string.quoted.single.xml",
-					"begin": "'",
-					"end": "'",
-					"patterns": [
-						{
-							"name": "constant.character.escape.xml",
-							"match": "\\\\."
-						}
-					]
-				},
-				{
-					"name": "meta.attribute.value.xml",
-					"match": "(?<=\\b[a-zA-Z_][\\w\\-]*\\s*=\\s*)\".*?\"|(?<=\\b[a-zA-Z_][\\w\\-]*\\s*=\\s*)'.*?'"
-				}
-			]
 		}
 	},
 	"scopeName": "source.bp"
 }
+			

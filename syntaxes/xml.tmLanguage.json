@@ -1,0 +1,93 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "XML",
+	"patterns": [
+		{
+			"include": "#tags"
+		},
+		{
+			"include": "#attributes"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#entities"
+		}
+	],
+	"repository": {
+		"tags": {
+			"patterns": [
+				{
+					"name": "entity.name.tag.xml",
+					"begin": "<([a-zA-Z_][\\w\\-]*)",
+					"beginCaptures": {
+						"1": {
+							"name": "entity.name.tag.xml"
+						}
+					},
+					"end": "\\s*/?>|>",
+					"patterns": [
+						{
+							"include": "#attributes"
+						}
+					]
+				},
+				{
+					"name": "entity.name.tag.xml",
+					"begin": "</",
+					"end": ">",
+					"captures": {
+						"0": {
+							"name": "entity.name.tag.xml"
+						}
+					}
+				}
+			]
+		},
+		"attributes": {
+			"patterns": [
+				{
+					"name": "entity.other.attribute-name.xml",
+					"match": "\\b([a-zA-Z_][\\w\\-]*)(?=\\s*=)"
+				},
+				{
+					"name": "string.quoted.double.xml",
+					"match": "\"([^\"]*)\""
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.xml",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.xml",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.xml",
+					"begin": "<!--",
+					"end": "-->"
+				}
+			]
+		},
+		"entities": {
+			"patterns": [
+				{
+					"name": "constant.character.entity.xml",
+					"match": "&[a-zA-Z0-9#]+;"
+				}
+			]
+		}
+	},
+	"scopeName": "text.xml"
+}

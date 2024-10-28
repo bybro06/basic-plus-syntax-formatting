@@ -2,13 +2,13 @@
 	"name": "basic-plus-syntax-formatting",
 	"displayName": "Basic Plus Syntax Formatting",
 	"description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
-	"version": "1.5.2",
+	"version": "1.6.0",
 	"publisher": "bybro06",
 	"engines": {
 		"vscode": "^1.94.0"
 	},
 	"devDependencies": {
-   		"vsce": "^2.15.0"
+		"vsce": "^2.15.0"
 	},
 	"categories": [
 		"Programming Languages"
@@ -54,10 +54,9 @@
 			},
 			{
 				"language": "xml",
-				"scopeName": "source.xml",
-				"path": "./syntaxes/bp.tmLanguage.json"
+				"scopeName": "text.xml",
+				"path": "./syntaxes/xml.tmLanguage.json"
 			}
-
 		],
 		"themes": [
 			{
