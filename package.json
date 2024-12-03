@@ -2,102 +2,85 @@
 	"name": "basic-plus-syntax-formatting",
 	"displayName": "Basic Plus Syntax Formatting",
 	"description": "Syntax Formatting for Basic Plus (Clev3r EV3)",
-	"version": "1.6.1",
+	"version": "1.7.0",
 	"publisher": "bybro06",
 	"engines": {
-		"vscode": "^1.94.0"
+	  "vscode": "^1.94.0"
 	},
-	"devDependencies": {
-		"vsce": "^2.15.0"
-	},
-	"categories": [
-		"Programming Languages"
+	"main": "./extension.js",
+	"activationEvents": [
 	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/bybro06/basic-plus-syntax-formatting.git"
-	},
-	"icon": "images/basic-plus-logo.jpeg",
 	"contributes": {
-		"languages": [
-			{
-				"id": "bp",
-				"aliases": [
-					"Basic Plus",
-					"basicplus",
-					"bp"
-				],
-				"extensions": [
-					".bp",
-					".bpi",
-					".bpm"
-				],
-				"configuration": "./syntaxes/language-configuration.json"
-			},
-			{
-				"id": "xml",
-				"aliases": [
-					"xml",
-					"Extensible Markup Language"
-				],
-				"extensions": [
-					".xml"
-				],
-				"configuration": "./syntaxes/language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "bp",
-				"scopeName": "source.bp",
-				"path": "./syntaxes/bp.tmLanguage.json"
-			},
-			{
-				"language": "xml",
-				"scopeName": "text.xml",
-				"path": "./syntaxes/xml.tmLanguage.json"
-			}
-		],
-		"themes": [
-			{
-				"label": "Basic Plus Theme Dark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/basic-plus-theme.json"
-			},
-			{
-				"label": "Basic Plus Theme Light",
-				"uiTheme": "vs",
-				"path": "./themes/basic-plus-theme-light.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "bp",
-				"path": "./snippets/bp-snippets.json"
-			}
-		],
-		"iconThemes": [
-			{
-				"id": "basic-plus-program-icon-theme",
-				"label": "Basic Plus Program Icon Theme",
-				"path": "./themes/icon-theme.json"
-			}
-		]
-	},
-	"__metadata": {
-		"id": "411086bb-a00c-4746-b9a0-fbc90e9a8907",
-		"publisherId": "b4ae8f98-69da-420f-a757-d2073d17cb61",
-		"publisherDisplayName": "José Esteban Benavides Rodríguez",
-		"targetPlatform": "undefined",
-		"isApplicationScoped": false,
-		"isPreReleaseVersion": false,
-		"hasPreReleaseVersion": false,
-		"installedTimestamp": 1728472104117,
-		"pinned": false,
-		"preRelease": false,
-		"source": "gallery"
-	},
-	"dependencies": {
-		"vsce": "^2.15.0"
+	  "commands": [
+		{
+		  "command": "extension.formatBP",
+		  "title": "Format BP Code"
+		}
+	  ],
+	  "languages": [
+		{
+		  "id": "bp",
+		  "aliases": [
+			"Basic Plus",
+			"basicplus",
+			"bp"
+		  ],
+		  "extensions": [
+			".bp",
+			".bpi",
+			".bpm"
+		  ],
+		  "configuration": "./syntaxes/language-configuration.json"
+		},
+		{
+		  "id": "xml",
+		  "aliases": [
+			"xml",
+			"Extensible Markup Language"
+		  ],
+		  "extensions": [
+			".xml"
+		  ],
+		  "configuration": "./syntaxes/language-configuration.json"
+		}
+	  ],
+	  "grammars": [
+		{
+		  "language": "bp",
+		  "scopeName": "source.bp",
+		  "path": "./syntaxes/bp.tmLanguage.json"
+		},
+		{
+		  "language": "xml",
+		  "scopeName": "text.xml",
+		  "path": "./syntaxes/xml.tmLanguage.json"
+		}
+	  ],
+	  "themes": [
+		{
+		  "label": "Basic Plus Theme Dark",
+		  "uiTheme": "vs-dark",
+		  "path": "./themes/basic-plus-theme.json"
+		},
+		{
+		  "label": "Basic Plus Theme Light",
+		  "uiTheme": "vs",
+		  "path": "./themes/basic-plus-theme-light.json"
+		}
+	  ],
+	  "snippets": [
+		{
+		  "language": "bp",
+		  "path": "./snippets/bp-snippets.json"
+		}
+	  ],
+	  "iconThemes": [
+		{
+		  "id": "basic-plus-program-icon-theme",
+		  "label": "Basic Plus Program Icon Theme",
+		  "path": "./themes/icon-theme.json"
+		}
+	  ]
 	}
-}
+  }
+  

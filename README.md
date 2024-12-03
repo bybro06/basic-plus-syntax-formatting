@@ -14,6 +14,8 @@ Syntax Highlighting: Automatically highlights keywords, methods, strings, and co
 
     · Automatic Code Completion for Control Structures: Writing a For, While, or Function automatically inserts the corresponding EndFor, EndWhile, or EndFunction in the next line, streamlining coding in Basic Plus.
 
+    · Text Formatting
+
 ## Requirements
 No external dependencies or configurations are required. This extension works out-of-the-box for Basic Plus (.bp, .bpi, .bpm) files in VS Code.
 
